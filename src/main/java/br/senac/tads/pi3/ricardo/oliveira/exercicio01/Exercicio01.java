@@ -5,8 +5,8 @@
  */
 package br.senac.tads.pi3.ricardo.oliveira.exercicio01;
 
-
 import java.util.Scanner;
+
 /**
  *
  * @author ricardo.oliveira5
@@ -16,31 +16,30 @@ public class Exercicio01 {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         int op;
-        
-        do{
-        System.out.println("1 cadastrar");
-        System.out.println("2 sair");
-        op = leitor.nextInt();
-        
-        if(op == 1){
-        System.out.println("Nome");
-        leitor.nextLine(); 
-        String nome = leitor.nextLine(); 
-        System.out.println("DataNascimento");
-        int nasc = leitor.nextInt();
-        System.out.println("E-mail");
-        leitor.nextLine(); 
-        String email = leitor.nextLine();
-        System.out.println("Telefone");
-        int tel = leitor.nextInt();
-        
-        System.out.println("\n"+nome);
-        System.out.println(nasc);
-        System.out.println(email);
-        System.out.println(tel);
-        }
-        }while(op != 2);
-            
-    
+
+        do {
+            System.out.println("1 - Cadastrar");
+            System.out.println("2 - Sair");
+            op = leitor.nextInt();
+
+            if (op == 1) {
+                System.out.println("Nome");
+                leitor.nextLine();
+                String nome = leitor.nextLine();
+                System.out.println("DataNascimento");
+                int nasc = leitor.nextInt();
+                System.out.println("E-mail");
+                leitor.nextLine();
+                String email = leitor.nextLine();
+                System.out.println("Telefone");
+                int tel = leitor.nextInt();
+
+                System.out.println("\nNome: " + nome);
+                System.out.println("Data de Nascimento: " + nasc);
+                System.out.println("Email: " + email);
+                System.out.println("Telefone: " + tel + "\n");
+            }
+        } while (op != 2);
+
     }
 }
