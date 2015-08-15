@@ -12,6 +12,6 @@ package br.senac.tads.pi3.ricardo.oliveira.exercicio01;
 public class Exercicio01 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World! ;)");
+        System.out.println("Hello Wdddorld! ;)");
     }
 }
