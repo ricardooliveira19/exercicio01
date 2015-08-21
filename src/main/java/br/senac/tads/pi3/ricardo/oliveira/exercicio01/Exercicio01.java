@@ -15,14 +15,17 @@ public class Exercicio01 {
 
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
-        int op;
+        int opc;
 
         do {
             System.out.println("1 - Cadastrar");
-            System.out.println("2 - Sair");
-            op = leitor.nextInt();
+            System.out.println("2 - Editar");
+            System.out.println("3 - Remover");
+            System.out.println("4 - Listar");
+            System.out.println("5 - Sair");
+            opc = leitor.nextInt();
 
-            if (op == 1) {
+            if (opc == 1) {
                 System.out.println("Nome");
                 leitor.nextLine();
                 String nome = leitor.nextLine();
@@ -39,7 +42,7 @@ public class Exercicio01 {
                 System.out.println("Email: " + email);
                 System.out.println("Telefone: " + tel + "\n");
             }
-        } while (op != 2);
+        } while (opc != 5);
 
     }
 }
